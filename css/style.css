@@ -1,0 +1,113 @@
+body {
+	font-family: 'Playfair Display', sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+}
+span {
+	display: block;
+}
+
+/*main-container*/
+	div.container {
+		width: 80%;
+		margin: 1% ;
+		display: inline-flex;
+	}
+
+	#draw-app {
+		border:1px solid #000000;
+		display: block;
+	}
+
+/*stroke-width*/
+	#brushSlider {
+		position: relative;
+		width: 100%;
+		margin: 14px;
+		padding: 0 14px;
+	}
+
+/*layout columns*/
+	.tools {
+		width: 25%;
+		display: block;
+		margin: 0;
+	}
+	.canvas-wrapper {
+		display: block;
+		margin: 0;
+	}
+/*section-title*/
+	.section-title {
+		padding: 14px 30px;
+		width: 100%;
+	}
+
+/*color-picker*/
+	#color-input {
+	  display: none;
+	}
+	#color-label {
+		display: block;
+	    position: relative;
+	  	height: 30px;
+	  	width: 50px;
+	  	margin: 30px;
+	  	border: 1px solid #ccc;
+	  	background-color: #FF0000;
+	} 
+	#color-input:checked ~ #color-picker {
+	  	opacity: 1;
+	}
+	#color-picker {
+	 	 background-color: white;
+	  	height: 150px;
+	  	width: 185px;
+	  	border: solid 1px #ccc;
+	  	opacity: 0;
+	  	padding: 5px;
+	  	margin: 0 30px;
+	}
+	canvas:hover {
+	  	cursor: crosshair;
+	}
+
+/*buttons*/
+	#clearCanvas {
+		padding: 16px 0;
+		width: 100%;
+		text-transform: uppercase;
+		background-color: #84cd76;
+		border: none;
+		border-radius: 5px;
+		margin: 30px;
+		color: #fff;
+	}
+	#clearCanvas:hover {
+		background-color: #84ab99;
+	}
+
+	#save {
+		padding: 16px 0;
+		width: 100%;
+		text-transform: uppercase;
+		background-color: #008b8b;
+		border: none;
+		border-radius: 5px;
+		margin: 30px;
+		color: #fff;
+	}
+	#save:hover {
+		background-color: #008B6A;
+	}
+
+	
+/*A little of responsive*/
+	@media screen and (max-width: 600px) {
+		div.container {
+			width: 100%;
+			margin: 0;
+			display: block;
+		}
+	}
